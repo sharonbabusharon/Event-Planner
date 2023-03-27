@@ -1,0 +1,22 @@
+{
+  "events": [
+    {
+      "name": "Happy",
+      "id": "3",
+      "venue": "mala",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf08iGDqogvS0xIDc6zzYVYIHjdtcOmhEP7Q&usqp=CAU",
+      "time": "11.00",
+      "date": "12/22",
+      "manager": "Rahul"
+    },
+    {
+      "name": "swasthi sumanghali",
+      "id": "2",
+      "venue": "thrissur",
+      "img": "https://media.istockphoto.com/id/1298329918/photo/birthday-celebratory-toast-with-string-lights-and-champagne-silhouettes.jpg?s=612x612&w=0&k=20&c=PaDeMR5-r0NdlxghuVF9tRqR5XkCdNdTzxrkofv0Syk=",
+      "time": "16:02",
+      "date": "2023-03-29",
+      "manager": "john"
+    }
+  ]
+}

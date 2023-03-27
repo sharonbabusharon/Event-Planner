@@ -1,0 +1,45 @@
+
+<div class="container-fluid">
+	
+		
+	<h1 class="text-center text-danger mt-5 mb-5">My Event</h1>
+	
+
+</div>
+
+
+
+<div class="container ">
+	<div class="divisions">
+	<div class="row" >
+		
+
+	
+		<div class="col-md-6">
+
+			<div class="card text-center">
+				<div class="card-header">
+				  <h3   span class=" text-danger"> Event Name:{{event.name}} </h3>
+				</div>
+				<div class="card-body">
+				<p class="card-text">Id:{{event.id}} </p>
+				  <h5 class="card-title">Venue: {{event.venue}}</h5>
+				  <p class="card-text">Time: {{event.time}}</p>
+				 
+				  <p class="card-text">Date: {{event.date}}</p>
+				  <p class="card-text">Manager: {{event.manager}}</p>
+				 
+				</div>
+			
+			  </div>
+
+		</div>
+		<div class="col-md-6">
+			<img [src]="event.img" alt="">
+		</div>
+	</div>
+</div>
+</div>
+<div class="div button"> 
+	<button  type="button" class="btn btn-danger" routerLink="/event/events">Back to Events</button>
+</div>

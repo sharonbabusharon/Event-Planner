@@ -1,0 +1,51 @@
+<div class="container-fluid">
+	
+		
+	<h1 class="text-center text-danger mt-5 mb-5">Upcomming Events</h1>
+	
+
+</div>
+
+<div class="container">
+<div class="search">
+	<div class="row">
+		<div class="col-md-6"><form action="">
+			<input type="text" (keyup)="search($event)" class="form-control" id="search" placeholder="search events">
+		</form></div>
+		<div class="col-md-6"></div>
+	</div>
+	
+</div>
+</div>
+
+<div class="container ">
+	<div class="divisions">
+	<div class="row" *ngFor="let event of allEvents | filter: searchKey:'name'">
+		
+
+	
+		<div class="col-md-6">
+
+			<div class="card text-center">
+				<div class="card-header">
+				  <h3   span class=" text-danger"> Event Name: {{event.name}}</h3>
+				  <h4>Id: {{event.id}}</h4>
+				</div>
+				<div class="card-body">
+				  <h5 class="card-title">Venue: {{event.venue}} <a routerLink="/event/view/{{event.id}}"style="float:right"><span style=" color: rgb(182, 36, 7);"><i class="fa-solid fa-eye"></i></span></a></h5>
+				  <p class="card-text">Date: {{event.date}}<a routerLink="/event/update/{{event.id}}" style="float:right"><span style=" color: rgb(182, 36, 7); "><i class="fa-solid fa-pen"></i></span></a></p>
+				  <p class="card-text">Manager: {{event.manager}} <button  (click)="deleteEvent(event.id)" style="float: right;  border: none; padding: 0px;"><span style=" color: rgb(182, 36, 7);"><i  class="fa-solid fa-trash"></i></span></button></p>
+				</div>
+			
+			  </div>
+
+		</div>
+		<div class="col-md-6">
+			<img [src]="event.img" alt="">
+		</div>
+	</div>
+</div>
+</div>
+<div class="div button"> 
+	<button  type="button" class="btn btn-danger" routerLink="/">Home</button>
+</div>

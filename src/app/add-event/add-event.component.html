@@ -1,0 +1,67 @@
+<div class="container-fluid">
+	
+		
+			<h1 class="text-center text-danger mt-3 mb-5">Add New Event</h1>
+			
+	
+	</div>
+
+	<!-- <h1>{{event | json}}</h1>  -->
+
+<div class="container form">
+	<div class="row">
+		<div class="col-md-6">
+			<form class="" id="form">
+				<div class="form-group">
+				  <label for="name">Event Name</label>
+				  <input type="text" [(ngModel)]="event.name"  name="eventName" class="form-control mb-4" id="exampleInputEmail1"placeholder="name">
+				
+				</div>
+
+				<div class="form-group">
+					<label for="id">Event Id</label>
+					<input type="text" [(ngModel)]="event.id"  name="eventId" class="form-control mb-4" id="exampleInputEmail1"placeholder="id">
+				  
+				  </div>
+
+				<div class="form-group">
+					<label for="venue">Event Venue</label>
+					<input type="text" [(ngModel)]="event.venue"  name="eventVenue" class="form-control mb-4" id="exampleInputEmail1"placeholder="venue">
+				  
+				  </div>
+
+
+				  
+				<div class="form-group">
+					<label for="venue">Event Image</label>
+					<input type="text" [(ngModel)]="event.img"  name="eventVenue" class="form-control mb-4" id="exampleInputEmail1"placeholder="venue">
+				  
+				  </div>
+
+				  <div class="form-group">
+					<label for="time">Event Time</label>
+					<input type="time" [(ngModel)]="event.time"  name="eventTime" class="form-control mb-4" id="exampleInputEmail1"placeholder="time">
+				  
+				  </div>
+
+				  <div class="form-group">
+					<label for="date">Event Date</label>
+					<input type="date" [(ngModel)]="event.date"  name="eventDate" class="form-control mb-4" id="exampleInputEmail1"placeholder="date">
+				  
+				  </div>
+
+				  <div class="form-group">
+					<label for="manager">Event Manager</label>
+					<input type="text" [(ngModel)]="event.manager"  name="eventManager" class="form-control mb-4" id="exampleInputEmail1"placeholder="manager">
+				  
+				  </div>
+				
+				<button type="button" (click)="addEvent()" class="btn btn-primary mt-4">Add Event</button>
+				<button type="button" routerLink="/" class="btn btn-danger mx-5 mt-4">Go Back</button>
+			  </form>
+		</div>
+		<div class="col-md-6 image">
+<img src="https://cdn.pixabay.com/photo/2017/12/08/11/53/event-party-3005668__340.jpg" alt="">
+		</div>
+	</div>
+</div>
